@@ -1,38 +1,144 @@
-.App {
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Header styles */
+.App-header {
+  background-color: cornflowerblue;
+  padding: 20px;
+  color: #fff;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-title {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Body styles */
+.App-body {
+  padding: 40px;
 }
 
+/* Blog post card styles */
+.blog-post-card {
+  margin-bottom: 2rem;
+  background-color: #fff;
+  border: 1px solid #343a40;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.blog-post-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-post-card .card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.blog-post-card .card-body {
+  padding: 20px;
+}
+
+.blog-post-card .card-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.blog-post-card .card-text {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.blog-post-card .read-more-link {
+  display: inline-block;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.blog-post-card .read-more-link:hover {
+  color: #0056b3;
+}
+
+.blog-post-card .card-footer {
+  background-color: #f9f9f9;
+  padding: 10px;
+  text-align: right;
+  font-size: 12px;
+  color: #777;
+}
+
+.read-more-link {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.modal-content {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+}
+
+.modal-backdrop {
+  opacity: 0.5;
+}
+
+/* Improved Header styles */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: cornflowerblue;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-title {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Center the header text horizontally and vertically */
+.App-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add some padding around the header title */
+.App-title {
+  padding: 10px;
+}
+
+/* Increase the font size of the header title on larger screens */
+@media (min-width: 768px) {
+  .App-title {
+    font-size: 48px;
   }
 }
